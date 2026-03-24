@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body{ 
+            margin : 20px;
+        }
+        form {
+            border : 2px solid #ccc;
+            padding :20px;
+            width:300px;
+        }
+        h2{
+            color:blue
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type ="tel"],
+        textarea[id="phone"],
+        input[type="submit"]{
+        width : 90%;
+        padding : 10px;
+        margin : 5px 0;
+        box-sizing : border-box;
+        }
+        input[type="submit"]{
+            background-color:#4CAf50;
+            color : white ;
+            border:none;
+        }
+        input[type="submit"]:hover{
+            background-color:#45a049;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2> User Registration form</h2>
+  <form>
+    <label for="name">Name:</label>
+  <input type ="text" id ="name" name="name" required><br>
+  <label for ="email"> Email:</label>
+  <input type="email" id ="email" name ="email" required><br>
+  <label for ="phone">PhNo:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+  <label for ="address">Adress:</label>
+  <textarea id="Adress" name="Adress" ></textarea><br>
+  <input type="submit" value="submit">
+</form>  
+</body>
+</html>
